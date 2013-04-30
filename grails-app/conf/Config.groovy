@@ -1,4 +1,4 @@
-// locations to search for config files that get merged into the main config;
+r// locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
 
@@ -125,6 +125,11 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/sitio/**':['ROLE_ADMIN','ROLE_SUPERVISOR'],
     '/provedores/**':['ROLE_ADMIN','ROLE_SUPERVISOR'],
     '/UsuarioProyecto/**':['ROLE_ADMIN'],
+    
+    
+    '/cliente/**':['ROLE_ADMIN','ROLE_SUPERVISOR'],
+    '/Acciones/**':['ROLE_ADMIN','ROLE_SUPERVISOR'],
+    '/Equipos/**':['ROLE_ADMIN','ROLE_SUPERVISOR'],
     
     '/orden/**':['ROLE_ADMIN','ROLE_USER','ROLE_SUPERVISOR'],
     '/seguimiento/**':['ROLE_ADMIN','ROLE_USER','ROLE_SUPERVISOR'],

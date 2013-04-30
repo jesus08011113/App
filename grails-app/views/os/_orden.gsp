@@ -4,7 +4,7 @@
 <g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-                         <center><h4>ORDEN DE SERVICIO NO. ${osInstance?.ticket}</h4></centar>
+                         <center><h4>ORDEN DE SERVICIO NO. ${osInstance?.ticket+48}</h4></centar>
                         <table>
                            <g:if test="${osInstance?.status}">
                           <tr >

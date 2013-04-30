@@ -9,7 +9,7 @@ class ClienteController {
     def index() {
         redirect(action: "list", params: params)
     }
-    def busqueda(){}
+    def busqueda(){  }
     
     
     

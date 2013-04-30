@@ -14,7 +14,7 @@
            <g:textField name="nombre" required="" value="${clienteInstance?.nombre}" size="35px"/>
         </td>
       </tr>
-      
+  
       <tr>
         <td class="fieldcontain ${hasErrors(bean: clienteInstance, field: 'domicilio', 'error')} required">
           <label for="domicilio">

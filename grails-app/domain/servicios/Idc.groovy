@@ -19,7 +19,7 @@ class Idc {
 
     static constraints = {
      
-       nombre nullable:false, blank:false
+        nombre nullable:false, blank:false 
         paterno nullable:false, blank:false
         materno nullable:false, blank:false
         direccion1 nullable:false, blank:false

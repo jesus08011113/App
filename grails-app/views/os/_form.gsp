@@ -19,7 +19,7 @@
         <label for="otroTipo">
 		<g:message code="os.otroTipo.label" default="Otro Tipo" />
 		
-	</label>
+	</label>      
       </td>
       <td class="fieldcontain ${hasErrors(bean: osInstance, field: 'marca', 'error')} ">
         <label for="marca">

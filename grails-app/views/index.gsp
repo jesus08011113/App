@@ -82,9 +82,8 @@
 	</head>
          
 	<body>
-           <div class="nav" role="navigation" align="center">
-			
-             <ul >
+           <div class="nav" role="navigation" align="center">			
+             <ul>
 			<sec:ifLoggedIn>
            
                           <li><g:link controller="logout">Cerrar Sesión </g:link></li><li><sec:username /></li> 
@@ -98,26 +97,35 @@
              </sec:ifNotLoggedIn>
                
               
-			</ul>
-		</div>
+	     </ul>
+        </div>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
                    
-                               <h1>Ordenes </h1>
-			<ul>
-                           <li><a href="/Servicios/orden/create" class="list">Nueva Orden</a></li>
-                           
-                           
-                           
-                          <li><a href="/Servicios/orden/list" class="list">Listado de Ordenes</a></li>
+                               <h1>Proyectos </h1>
+			  <ul>
+                          <li><a href="/Servicios/orden/create" class="list">Nuevo Proyecto</a></li>                        
+                          <li><a href="/Servicios/orden/list" class="list">Listado de Proyectos</a></li>
                           <li><a href="/Servicios/observacion/list" class="list">Listado de Observaciónes</a></li>
                           <li><a href="/Servicios/seguimiento/list" class="list">Listado de Check List</a></li>
-                          <li><a href="/Servicios/cliente/busqueda" >Ordenes de Servicio</a></li>
+                    
                           <li><a href="/Servicios/searchable" >Buscar</a></li>
-                          
-                               
-                              
-			</ul>
+                      
+          
+			 </ul>
+    
+                            <h1> ordenes de servicio</h1>
+    
+                            <u1>
+    
+                              <li><a href="/Servicios/cliente/busqueda"class="list">Ordenes de Servicio</a></li>
+                              <a href="/Servicios/cliente/busqueda"class="list">Listado de Ordenes</a>
+                              <a href="/Servicios/Acciones/list">Acciones a Tomar</a>
+                              <a href="/Servicios/Equipos/list">Tipos de Equipos</a>
+                              <a> </a>
+                            </u1>
+    
+    
 			<h1>Gestión  de Usuarios</h1>
 			<ul>
                           <li><g:link  controller='user' href="/Servicios/user/create" action='create'>Crear Cuenta </g:link> </li>
@@ -165,14 +173,12 @@
 </center> 
     
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				
 				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
+					
                                         
 				</ul>
-			</div>--%>
+			</div>
 		</div>
 	</body>
 </html>
